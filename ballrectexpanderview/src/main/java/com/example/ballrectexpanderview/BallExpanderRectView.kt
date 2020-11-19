@@ -40,9 +40,9 @@ fun Canvas.drawBallExpanderRect(scale : Float, w : Float, h : Float, paint : Pai
     for (j in 0..1) {
         save()
         scale(1f - 2 * j, 1f - 2 * j)
-        translate((w / 2 - r) * sf2, 0f)
-        drawCircle(0f, r + (h - 2 * r) * sf3, r * sf1, paint)
-        drawRect(RectF(-r, 0f, r, r + (h - 2 * r) * sf3), paint)
+        translate((w / 2 - r) * (1f - sf2), 0f)
+        drawCircle(0f, r + (h / 2 - 2 * r) * sf3, r * sf1, paint)
+        drawRect(RectF(-r, 0f, r, (h / 2 - 2 * r) * sf3), paint)
         restore()
     }
     restore()
