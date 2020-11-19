@@ -1,0 +1,3 @@
+include ':ballrectexpanderview'
+include ':app'
+rootProject.name = "LinkedBallRectExanderView"
