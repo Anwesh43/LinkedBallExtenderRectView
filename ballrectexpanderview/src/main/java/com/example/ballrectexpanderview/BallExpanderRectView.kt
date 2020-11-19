@@ -206,4 +206,13 @@ class BallExpanderRectView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+
+        fun create(activity : Activity)  : BallExpanderRectView {
+            val view : BallExpanderRectView = BallExpanderRectView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 }
